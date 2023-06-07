@@ -1,0 +1,35 @@
+{
+    "booklist": [
+        {
+            "id":1,
+            "name":"Harry Potter and the Deathly Hallows",
+            "author":"J.K. Rowling",
+            "labels":"fiction",
+            "quantity": 3
+        },{
+            "id":2,
+            "name":"Digital Fortress",
+            "author":"Dan Brown",
+            "labels":"fiction",
+            "quantity": 5
+        },{
+            "id":3,
+            "name":"Sapiens: A brief history of human kind",
+            "author":"Yuval Noah Harari",
+            "labels":"non-fiction",
+            "quantity": 5
+        },{
+            "id":4,
+            "name":"The Passage",
+            "author":"Justin Cronin",
+            "labels":"fiction",
+            "quantity": 2
+        },{
+            "id":5,
+            "name":"The Baltimore Book",
+            "author":"Joel Dicker",
+            "labels":"fiction",
+            "quantity": 1
+        }
+    ]
+}

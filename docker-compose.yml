@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8082"
+    environment:
+      - app.env
+    volumes:
+      - ./logs:/app/logs
+    links:
+      - redis
+  redis:
+    image: redis:alpine
+  fluentd:
+    container_name: fluentd
+    image: fluent/fluentd:latest
+    user: root
+
+    volumes:
+      - /var/lib/docker/containers:/fluentd/log/containers
+      - ./fluentd/fluent.conf:/fluentd/etc/fluent.conf
+      - ./fluentd/output:/output/
+    logging:
+      driver: "local"
