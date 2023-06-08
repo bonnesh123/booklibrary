@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker Image
-        run: docker build . --file Dockerfile --tag booklibrary:$data +%s)
+        run: docker build . --file Dockerfile --tag booklib:$data +%s)
 
